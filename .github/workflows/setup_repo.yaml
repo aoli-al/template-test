@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - run: sed -i 's|{-ActivityLocation-}|https://github.com/aoli-al.png|g' README.md
+      - run: sed -i 's|{-ActivityLocation-}|https://raw.githubusercontent.com/${{ github.repository }}/activity-resources/image.svg|g' README.md
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
