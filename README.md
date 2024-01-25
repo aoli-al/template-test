@@ -1,4 +1,4 @@
 # TEST
 
-{-ActivityLocation-}
+![]({-ActivityLocation-})
 
