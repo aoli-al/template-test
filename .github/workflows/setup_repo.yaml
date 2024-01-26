@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
-      - run: sed -i 's|{-ActivityLocation-}|https://raw.githubusercontent.com/${{ github.repository }}/activity-resources/image.svg|g' README.md
+      - run: sed -i 's|{-ActivityLocation-}|https://activity-action.vercel.app/api/handler?repo=${{github.repository}}&period=Project 2/2024-01-20T00:00:00-05:00/2024-03-29T23:59:00-05:00|g' README.md
 
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
